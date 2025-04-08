@@ -18,7 +18,7 @@ export default function Header({open, setOpen, isOpen}){
 </div>
 <div >
                 <ul className={`nav-links ${open? "nav-active": ""}`}>
-                <li><Link onClick={closeMenu} to='/.'>Home</Link></li>
+                <li><Link onClick={closeMenu} to='/home.'>Home</Link></li>
                 <li><Link onClick={closeMenu} to='/about'>About</Link></li>
                 <li><Link onClick={closeMenu} to='/portfolio'>My Portfolio</Link></li>
                 <li><Link onClick={closeMenu} to='/contact'>Contact</Link></li>
