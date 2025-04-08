@@ -1,0 +1,99 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    height: 500px;
+    width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgb(156, 113, 113), rgb(255, 123, 123));
+
+}
+ h2{
+    text-align:center;
+    font-size: 30px;
+    color: rgb(15, 15, 14);
+}
+.form{
+    display:  flex;
+
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+    width: 500px;
+    margin-left: 10px;
+}
+.form>label{
+    font-size: 20px;
+    margin-bottom: 5px;
+    
+}
+.field{
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(224, 218, 218, 0.5);
+    font-size: 20px;
+}
+
+.field::placeholder{
+    color: rgb(41, 41, 38,0.2);
+    font-size: 15px;
+    padding: 5px;
+}
+.field-mess{ 
+    height: 100px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(224, 218, 218, 0.5);
+    resize: none;
+    padding: 0;
+    margin-bottom: 10px;
+    color:black;
+    font-size: 20px;
+    margin-left: 5px;;
+}
+.field-mess::placeholder{
+    color: rgb(41, 41, 38,0.2);
+    font-size: 15px;
+    padding: 5px;
+}
+.form-button{
+    align-items: center;
+    height: 40px;
+    background-color: rgb(236, 212, 216);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 200px;
+    font-weight: bold;
+    color: rgb(56, 52, 52);
+}
+@media screen and (max-width: 768px){
+    .contact{
+        flex-direction: column;
+        width: 90%;
+        
+    }
+    .form{
+        width: 90%;
+        margin-left: 0;
+    }
+    .field-mess{
+        width: 100%;
+        margin-left: 0;
+    }
+    .form-button{
+        margin-left: 40px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .contact.open{
+        margin-top:180px;
+    }
+}

@@ -1,12 +1,17 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.app-container{
+  transition: all 0.3s ease-in-out;
+  
 
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +41,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+
