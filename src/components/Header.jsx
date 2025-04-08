@@ -2,7 +2,6 @@ import React from 'react'
 import './styles/Header.css'
 import {  Link }  from 'react-router-dom'
 import {FiMenu, FiX} from 'react-icons/fi'
-import Hamburger from 'hamburger-react'
 
 export default function Header({open, setOpen, isOpen}){
     function closeMenu(){
