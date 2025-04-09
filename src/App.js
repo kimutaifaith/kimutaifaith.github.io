@@ -22,7 +22,6 @@ export default function App(){
           <Route path='/about' element={<About open={open}/>}></Route>
           <Route path='/contact' element={<Contact open={open}/>}></Route>
         </Routes>
-        
     
     </>
   )
