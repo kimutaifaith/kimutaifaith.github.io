@@ -15,14 +15,14 @@ export default function App(){
   
   return(
     <>
-    <BrowserRouter>
+    
     <Header open={open} setOpen={setOpen} isOpen={isOpen}/>
         <Routes>
           <Route path='/' element={<><Main open={open}/><Section/></>}></Route>
           <Route path='/about' element={<About open={open}/>}></Route>
           <Route path='/contact' element={<Contact open={open}/>}></Route>
         </Routes>
-        </BrowserRouter>,
+        
     
     </>
   )
