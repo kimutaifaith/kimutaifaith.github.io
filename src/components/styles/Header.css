@@ -29,6 +29,10 @@ margin: 15px;
     border-bottom: 3px solid rgb(221, 82, 82);
     
 }
+.header-active{
+    color: white;
+    
+}
 
 .header-toggle{
     background: none;

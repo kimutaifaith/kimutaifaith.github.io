@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/Header.css'
-import {  Link }  from 'react-router-dom'
+import {  NavLink }  from 'react-router-dom'
 import {FiMenu, FiX} from 'react-icons/fi'
 
 export default function Header({open, setOpen, isOpen}){
@@ -8,6 +8,13 @@ export default function Header({open, setOpen, isOpen}){
         setOpen(false)
     }
     
+    const activeStyle= {
+        color: 'white',
+        fontWeight: 'bold',
+        textDecoration: 'underline',
+
+    }
+
     return(
         <>
         <header className="header">
@@ -17,10 +24,10 @@ export default function Header({open, setOpen, isOpen}){
 </div>
 <div >
                 <ul className={`nav-links ${open? "nav-active": ""}`}>
-                <li><Link onClick={closeMenu} to='/'>Home</Link></li>
-                <li><Link onClick={closeMenu} to='/about'>About</Link></li>
-                <li><Link onClick={closeMenu} to='/portfolio'>My Portfolio</Link></li>
-                <li><Link onClick={closeMenu} to='/contact'>Contact</Link></li>
+                <li><NavLink style={({isActive}) => isActive? activeStyle: null}  onClick={closeMenu} to='/'>Home</NavLink></li>
+                <li><NavLink style={({isActive}) => isActive? activeStyle: null} onClick={closeMenu} to='/about'>About</NavLink></li>
+                <li><NavLink style={({isActive}) => isActive? activeStyle: null} onClick={closeMenu} to='/portfolio'>My Portfolio</NavLink></li>
+                <li><NavLink style={({isActive}) => isActive? activeStyle: null} onClick={closeMenu} to='/contact'>Contact</NavLink></li>
                 </ul>
                 </div>
             </div>
